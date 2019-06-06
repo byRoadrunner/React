@@ -1,19 +1,19 @@
 # React
-React is a premium plugin developed by cyberpwn to help keep servers stable while under heavy load, and help admins and/or developers understand what is going on under the hood while ingame quickly. React is different than many other "anti lag" plugins because it is conservative. For example, why would you remove player drops from the world if the server is not lagging, nor is it running low on memory? This is the basis of react. If something is wrong, react to it, otherwise, dont interrupt the player experience.
-[View The Wiki](https://github.com/cyberpwnn/React/wiki)
+[![CircleCI](https://circleci.com/gh/VolmitSoftware/React.svg?style=svg)](https://circleci.com/gh/VolmitSoftware/React)
 
-## Samplers
-For react to understand what is going on under the hood, it must sample several things further than just the TPS. For example, if the server is lagging, what is causing it? To figure this out, react checks all of its samplers and tries to use judgement of what would be the quickest, and best course of action.
-[More on Samplers](https://github.com/cyberpwnn/React/wiki/Samplers)
+# Contributing
+See [Contributing](https://github.com/VolmitSoftware/React/blob/master/CONTRIBUTING.md)
 
-## Reactions
-Once react understands the problem, it will use "reactions" to fix the problem automatically. For example, if the server is lagging because there is a lot of redstone activity (more than normal), then react will try to freeze the redstone. Many things, including mobs, entities, drops, liquids, redstone, and much more are detected and fixed automatically.
-[More on Reactions](https://github.com/cyberpwnn/React/wiki/Reactions)
+# Building
+You can build a fresh copy of react very simply.
 
-## Monitoring
-React is open, meaning you can see in the eyes of react. You can see everything react is monitoring with a beautiful, yet functional hud. This is acheived by using the action bar and title messages. You can view the TPS, memory, chunks, and much more. 
-[More on Monitoring](https://github.com/cyberpwnn/React/wiki/Monitoring)
+#### Prerequisites 
+* Java JDK 8 must be installed
+* JAVA_HOME path might need to be defined (though it may not be needed on all systems) (google is your friend)
 
-## Configurable
-Every Sampler, and every Reaction is highly configurable, and can even be disabled. This makes react a great fit for any server. For example, if you expect the server to lag from time to time with redstone, but do not want it to freeze the redstone, you can esily disable it. React will still notify you about the lag cause, however it will not do anything to fix it if you disable it. 
-[More on Configuration](https://github.com/cyberpwnn/React/wiki)
+To Build React:
+
+1. Clone this repository to your computer somewhere
+2. Execute `build.bat` for Windows or `build.sh` for Linux or MacOSX
+3. Wait. This may take some time the first time you build react. After the first build, it should take less than 5 seconds.
+4. Once the terminal exits, You can find the react jar in `release/VERSION/React-VERSION.jar`
